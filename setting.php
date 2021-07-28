@@ -28,7 +28,7 @@
             $stmt->execute();
             $user_name = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            $icon_path = $user_name['icon'] !== false ? $user_name['icon'] : false;
+            $icon_path = $user_name['icon'] !==  ? $user_name['icon'] : false;
 
             //自分のフォロー数
             $sql = 'select count(email) from follow where email=:email';
