@@ -18,14 +18,34 @@
 
 * usersテーブル 
 
-|id|int(11)|
-| --- | --- |
-|identify|varchar(255)|
-|userid|varchar(100)|
-|username|varchar(100)|
-|password|varchar(255)|
-|uniqid|varchar(23)|
-|icon|varchar(50)|
+|Column|Type|Options|
+| :---: | :---: | :---: |
+|id|int(11)|null:false|
+|identify|varchar(255)|null:false|
+|userid|varchar(100)|null:false|
+|username|varchar(100)|null:false|
+|password|varchar(255)|null:false|
+|uniqid|varchar(23)|null:false|
+|icon|varchar(50)|null:false|
+
+* posttextテーブル
+
+|Column|Type|Options|
+| :---: | :---: | :---: |
+|id|int(11)|null:false|
+|identify|varchar(255)|null:false|
+|posttext|varchar(140)|null:false|
+|created|timestamp|null:false,current_timestamp|
+|username|varchar(100)|null:false|
+
+* followテーブル
+
+|Column|Type|Options|
+| :---: | :---: | :---: |
+|followid|int(11)|null:false|
+|email|varchar(255)|null:false|
+|follow|varchar(255)|null:false|
+
 
 #### 機能
 
