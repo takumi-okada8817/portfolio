@@ -51,23 +51,6 @@
         }catch(Exception $e){
             echo $e->getMessage().PHP_EOL;
         }
-        
-        //アカウント削除
-        /* try{
-            if(isset($_POST['acdel'])){
-                if($_POST['token'] === $_SESSION['token']){    
-                    $sql = "delete from users where identify=:userid";
-                    $stmt->bindValue(':userid',$userid);
-                    $stmt = $dbh->prepare($sql);
-                    $stmt->execute();
-                }
-                session_regenerate_id(true);
-                $token = h(generate_token());
-                $_SESSION['token'] = $token;
-            }
-        }catch(Exception $e){
-            echo $e->getMessage().PHP_EOL;
-        } */
     }
 
     //ログアウト
