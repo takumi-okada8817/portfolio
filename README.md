@@ -6,6 +6,8 @@
 
 * フレームワークを使用せず素のPHPで書いています。
 
+<img width="945" alt="portfolio" src="https://user-images.githubusercontent.com/70016906/127347090-e6e68767-e989-4136-a54b-48dfed62e944.png">
+
 #### 使用技術
 
 * PHP 7.4.10
